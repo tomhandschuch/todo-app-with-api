@@ -1,18 +1,44 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 2rem;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #241647, #5e122f);
   }
   
   h1 {
-    font-size: 24px;
+    font-size: 2rem;
   }
   
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 2rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+  }
+
   input[type="text"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
     padding: 8px;
     font-size: 16px;
     width: 300px;
   }
-  
+  .addButton {
+    border: none;
+    outline: none;
+    padding: 1rem 4rem;
+    background: #241647;
+    color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+  }
+
   button {
     padding: 8px 12px;
     font-size: 16px;
@@ -30,7 +56,6 @@ body {
   
   .todo-item {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 8px 0;
   }
@@ -48,9 +73,21 @@ body {
   
   #removeDoneButton {
     margin-top: 20px;
-    background-color: red;
+    background-color: #5e122f;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 2rem;
   }
+
+  main {
+    background-color: whitesmoke;
+    padding: 0.5rem 3rem 1rem ;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 540px;
+    margin: 50px auto 20px;
+  }
+
+
   
