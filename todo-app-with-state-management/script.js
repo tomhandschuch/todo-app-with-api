@@ -15,7 +15,7 @@ function saveState() {
 
 function displayTodos(filter = 'all') {
   const todoList = document.querySelector('#todoList');
-  todoList.innerHTML = '';
+  todoList.innerText = '';
 
   let filteredTodos = todos;
   if (filter === 'open') {
