@@ -14,16 +14,15 @@
     <label><input type="radio" name="filter" value="all" checked> All</label>
     <label><input type="radio" name="filter" value="open"> Open</label>
     <label><input type="radio" name="filter" value="done"> Done</label>
+  </div><br>
+
+  <div class="row">
+    <input type="text" id="todoInput" placeholder="Add new todo">
+    <button class="addButton" id="addTodoButton">Add Todo</button>
   </div>
-
-  <button id="removeDoneButton">Remove Done Todos</button><br><br>
-
-<div class="row">
-  <input type="text" id="todoInput" placeholder="Add new todo">
-  <button class="addButton" id="addTodoButton">Add Todo</button>
-  </div>
-
+  
   <ul id="todoList" class="todo-list"></ul>
+  <button id="removeDoneButton">Remove Done Todos</button>
 </main>
   <script src="script.js"></script>
 </body>
