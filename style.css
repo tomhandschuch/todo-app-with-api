@@ -1,0 +1,116 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 2rem;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #241647, #5e122f);
+}
+
+h1 {
+  font-size: 2rem;
+  color: #241647;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 2rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 8px;
+  font-size: 16px;
+  width: 300px;
+}
+
+.addButton {
+  border: none;
+  outline: none;
+  padding: 1rem 4rem;
+  background: #241647;
+  color: white;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.todo-list {
+  max-height: 80vh; 
+  overflow-y: auto; 
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.filters {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.filters label {
+  margin-right: 15px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  color: #241647;
+  border: 3px solid #241647;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: auto;
+  gap: 0.2rem;
+}
+
+label::before {
+  content: "";
+  height: 0.5rem;
+  width: 0.5rem;
+  border: 3px solid #241647;
+  border-radius: 50%;
+}
+
+label:has(input[type="radio"]:checked)::before {
+  background-color: #241647;
+}
+
+#removeDoneButton {
+  margin-top: 20px;
+  background-color: #5e122f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+main {
+  background-color: whitesmoke;
+  padding: 0.5rem 3rem 1rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 540px;
+  margin: 50px auto 20px;
+}
