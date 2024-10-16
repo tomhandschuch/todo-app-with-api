@@ -48,8 +48,8 @@ button {
 }
 
 .todo-list {
-  max-height: 80vh; 
-  overflow-y: auto; 
+  max-height: 80vh;
+  overflow-y: auto;
   list-style: none;
   padding: 0;
   margin: 20px 0;
@@ -58,7 +58,30 @@ button {
 .todo-item {
   display: flex;
   align-items: center;
-  padding: 8px 0;
+  justify-content: space-between;
+  background: #f4f4f9;
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.todo-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.todo-item span {
+  flex: 1;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 16px;
+  transform: scale(1.5);
+  cursor: pointer;
 }
 
 .filters {
@@ -98,7 +121,8 @@ label:has(input[type="radio"]:checked)::before {
 }
 
 #removeDoneButton {
-  margin-top: 20px;
+  margin-top: 10px;
+  font-size: 1.2rem;
   background-color: #5e122f;
   color: white;
   border: none;
@@ -113,4 +137,16 @@ main {
   width: 100%;
   max-width: 540px;
   margin: 50px auto 20px;
+}
+
+.addButton:hover {
+  background-color: #3a205b;
+}
+
+.addButton:active {
+  background-color: #503274;
+}
+
+#removeDoneButton:hover {
+  background-color: #7a1d3e;
 }
